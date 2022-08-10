@@ -1,8 +1,23 @@
-<h1> Welcome Jaafar </h1>
-<h1> Welcome {{ name }} </h1>
-<h1> Operation Example: {{5+5}} </h1>
-<h1> {{"Concatination Example: This is " + name}}</h1>
-<h1> {{"Length Example: " + name.length}}</h1>
-<h1> {{"UpperCase Example: " + name.toUpperCase()}} </h1>
-<h1> {{"Method Example: " + greetUser()}}</h1>
-<h1> {{"Local Link: " + siteUrl}}</h1>
+<h3> Welcome Jaafar </h3>
+<h3> Welcome {{ name }} </h3>
+<h3> Operation Example: {{5+5}} </h3>
+<h3> {{"Concatination Example: This is " + name}} </h3>
+<h3> {{"Length Example: " + name.length}} </h3>
+<h3> {{"UpperCase Example: " + name.toUpperCase()}} </h3>
+<h3> {{"Method Example: " + greetUser()}} </h3>
+<h3> {{"Local Link: " + siteUrl}} </h3>
+<div>
+    <h1 style="text-align: center; font-size: 30px;"> Property Binding </h1>
+    <input [id]="myId" type="text" value="Jaafar">
+    <!-- we can use interpolation, but it's work only with string values -->
+    <input id="{{myId}}" type="text" value="Jaafar">
+    <!-- add disabled attribute using property binding -->
+    <input [disabled]="isDisabled" type="text" value="Jaafar">
+    <!-- add alternative synatax for property binding -->
+    <input bind-disabled="isDisabled" type="text" value="Jaafar">
+
+
+
+
+
+</div>
