@@ -16,6 +16,14 @@
     <!-- add alternative synatax for property binding -->
     <input bind-disabled="isDisabled" type="text" value="Jaafar">
 
+</div>
+<div>
+    <h1 style="text-align: center; font-size: 30px;"> Class Binding </h1>
+    <h2 class="text-success"> Welcome Jaafar </h2>
+    <h2 [class]="successClass" > Welcome Jaafar </h2>
+    <h2 class="text-special" [class]="successClass"> Welcome Jaafar </h2>
+    <h2 [class.text-danger]="hasError"> Welcome Jaafar </h2>
+    <h2 [ngClass]="messageClasses"> Welcome Jaafar </h2>
 
 
 
