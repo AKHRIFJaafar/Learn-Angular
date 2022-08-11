@@ -25,7 +25,12 @@
     <h2 [class.text-danger]="hasError"> Welcome Jaafar </h2>
     <h2 [ngClass]="messageClasses"> Welcome Jaafar </h2>
 
-
+</div>
+<div>
+    <h1 style="text-align: center; font-size: 30px;"> Event Binding </h1>
+    <h2 class="text-success"> Welcome Jaafar </h2>
+    <button (click)="onclick()" >GREET</button>
+    {{greeting}}
 
 
 </div>
