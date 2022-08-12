@@ -31,6 +31,10 @@
     <h2 class="text-success"> Welcome Jaafar </h2>
     <button (click)="onclick()" >GREET</button>
     {{greeting}}
+</div>
 
-
+<div>
+    <h1 style="text-align: center; font-size: 30px;"> Template Reference Variables </h1>
+    <input #myInput type="text">
+    <button (click)="logMessage(myInput.value)" >Log</button>
 </div>

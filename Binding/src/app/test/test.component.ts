@@ -33,8 +33,9 @@ export class TestComponent implements OnInit {
   onclick(){ 
     console.log ("welcome Jaafar");
     this.greeting = 'WELCOME JAAFAR';
+  }
+  logMessage(value){ 
+    console.log(value);
 
   }
-
-
 }
