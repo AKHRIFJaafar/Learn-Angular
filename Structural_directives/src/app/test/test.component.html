@@ -1,0 +1,20 @@
+<div>
+    <h1 style="text-align: center; font-size: 30px;"> ngif directive </h1>
+    <h3 *ngIf="true" > Welcome Jaafar</h3>
+    <!--element removed from the DOM  -->
+    <h3 *ngIf="false" > Welcome Jaafar</h3>
+    <h3 *ngIf="displayName; else elseBlock" > Welcome Jaafar </h3>
+
+    <ng-template #elseBlock>
+        <h3> Name is hidden </h3>
+    </ng-template>
+    <!-- other typing method -->
+    <h2 *ngIf="displayName; then thenBlock1; else elseBlock1 "></h2>
+    <ng-template #thenBlock1>
+        <h3> Welcome Jaafar with other method</h3>
+    </ng-template>
+    <ng-template #elseBlock1>
+        <h3> Name is hidden with other method</h3>
+    </ng-template>    
+
+</div>
