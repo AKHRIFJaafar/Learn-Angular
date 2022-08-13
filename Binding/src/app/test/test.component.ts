@@ -22,6 +22,7 @@ export class TestComponent implements OnInit {
 
   }
   public greeting = "";
+  public twoWayProperty ="";
  
   constructor() { }
 

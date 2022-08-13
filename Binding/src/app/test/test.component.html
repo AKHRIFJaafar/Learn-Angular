@@ -38,3 +38,10 @@
     <input #myInput type="text">
     <button (click)="logMessage(myInput.value)" >Log</button>
 </div>
+
+<div>
+    <h1 style="text-align: center; font-size: 30px;"> Two Wy Binding </h1>
+    <input [(ngModel)]="twoWayProperty" type="text">
+    {{ twoWayProperty }} 
+
+</div>
