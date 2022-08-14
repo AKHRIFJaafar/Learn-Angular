@@ -1,5 +1,5 @@
 <div>
-    <h1 style="text-align: center; font-size: 30px;"> ngif directive </h1>
+    <h1 style="text-align: center; font-size: 30px;"> ngIf directive </h1>
     <h3 *ngIf="true" > Welcome Jaafar</h3>
     <!--element removed from the DOM  -->
     <h3 *ngIf="false" > Welcome Jaafar</h3>
@@ -16,5 +16,14 @@
     <ng-template #elseBlock1>
         <h3> Name is hidden with other method</h3>
     </ng-template>    
+
+</div>
+
+<h1 style="text-align: center; font-size: 30px;"> ngSwitch directive </h1>
+<div [ngSwitch]="color" >
+    <div *ngSwitchCase="'red'">You picked red color</div>
+    <div *ngSwitchCase="'blue'">You picked blue color</div>
+    <div *ngSwitchCase="'green'">You picked green color</div>
+    <div *ngSwitchDefault>picked again</div>
 
 </div>
