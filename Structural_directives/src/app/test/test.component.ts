@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   public displayName = false;
-  public color = "blue";
+  public a_color = "blue";
+  public colors = ["red", "blue", "green", "yellow"];
 
   constructor() { }
 
