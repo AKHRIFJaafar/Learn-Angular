@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { IEmployee } from './employee';
-import { Observable } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from "rxjs/operators";
 @Injectable({
   providedIn: 'root'
 })
@@ -11,7 +12,14 @@ export class EmployeeService {
   constructor( private http: HttpClient) { }
 
   getEmployees(): Observable<IEmployee[]>{
-    return this.http.get<IEmployee[]>(this._http);
+    return this.http.get<IEmployee[]>(this._http)
+                    .pipe(retry(1),catchError(this.handleError)) ;
+  }
+  handleError(error: HttpErrorResponse){ 
+    return throwError(() => {
+      return error.message;
+    });
+
   }
 }
 

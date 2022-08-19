@@ -1,6 +1,7 @@
 <hr>
 <h1 style="text-align: center; font-size: 30px;"> Services </h1>
     <h2> Employee List </h2>
+    {{errorMsg}}
     <ul *ngFor="let employee of employees" >
         <li>{{employee.name}}</li>
     </ul>
