@@ -1,0 +1,20 @@
+What are the topics to learn in Angular?
+
+
+1- Modular Angular Architecture. ...
+2- One-way Dataflow and Immutability. ...
+3- Attribute and Structural Directives. ...
+4- Component Life Cycle Hooks. ...
+5- Http and Observable Services. ...
+6- Smart/Dumb Component Architecture. ...
+7- Application Structure and Best Practices.
+8. Template Binding Syntax
+9. Feature Modules and Routing
+10. Forms and Validation (Reactive Forms and Validators)
+11. Content Projection
+12. onPush Change Detection
+13. Route Guards, Pre-loads, Lazy-loading
+14. Custom Pipes
+15. @viewChild and @ContentChild Decorators
+16. Dynamic Components and ng-template
+17. @Host @Hostbinding and exportAs
